@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Up Example</title>
+
+    <style type="text/css">
+        #p1,
+        #f1 {
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            border: solid 2px green;
+        }
+
+        #p1 {
+            padding: 50px;
+            width: 100px;
+            display: none;
+            color: green;
+            font-style: italic;
+        }
+
+        #f1 {
+            width: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Silde Down Example</h1>
+    <center>
+        <div id="f1">Slide down Effect</div>
+        <div id="p1">Jay Amin</div>
+    </center>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $("#f1").click(function () {
+            $("#p1").slideDown("slow");
+        });
+    </script>
+
+</body>
+
+</html>

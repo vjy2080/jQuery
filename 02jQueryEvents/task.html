@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+	<style type="text/css">
+		#e5 {
+			width: 100px;
+			height: 100px;
+			border-radius: 0px;
+			background-color: aqua;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="e1">Welcome.</p>
+	<p id="e2">Learn and Explore</p>
+	<p>
+		<input type="text" id="e3" value="jQuery is powerful!" />
+	</p>
+	<p id="e4" align="left">Welcome to Text</p>
+	<p>
+		<div id="e5"></div>
+	</p>
+	<button id="gfg1">Change Text</button>
+	<button id="gfg2">Change HTML</button>
+	<button id="gfg3">Change Value</button>
+	<button id="gfg4">Change Alignment</button>
+	<button id="gfg5">Change Shape</button>
+	<script type="text/javascript">
+		$("#gfg1").click(function() {
+			$("#e1").text("Testing Text");
+		});
+		$("#gfg2").click(function() {
+			$("#e2").html("<b>Enrich your Knowledge.</b>");
+		});
+		$("#gfg3").click(function() {
+			$("#e3").val("jQuery With Jay Amin");
+		});
+		$("#gfg4").click(function() {
+			$("#e4").attr("align", "center");
+		});
+		$("#gfg5").click(function() {
+			$("#e5").css("border-radius", "50px");
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para-class{
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+ 
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, dolorem amet. Alias facere rerum, itaque, nostrum possimus vitae a laboriosam vero impedit quaerat iure amet. Iusto possimus quis cumque sed!</p>
+    <button id="addclass">Add Class</button>
+    <button id="removeclass">Remove Class</button>
+    <button id="toggleclass">Toggle Class</button>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        // document.getElementById("addclass").addEventListener("click",function (params) {
+            
+        // })
+        $("#addclass").on("click",function () {
+            // console.log("called add class ");
+            // document.getElementById("para").classList.add("para-class")
+            $("#para").addClass("para-class")
+        })
+        $("#removeclass").on("click",function () {
+            // document.getElementById("para").classList.remove("para-class")
+            $("#para").removeClass("para-class")
+            // console.log("called removeclass ");
+        })
+        $("#toggleclass").on("click",function () {
+            // console.log("called toggleclass ");
+            $("#para").toggleClass("para-class")
+
+        })
+    </script>
+</body>
+</html>

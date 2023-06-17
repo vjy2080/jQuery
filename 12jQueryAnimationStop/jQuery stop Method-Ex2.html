@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The stop Method</title>
+    <style>
+        div {
+            background: green;
+            height: 100px;
+            width: 100px;
+        }
+
+        button {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- click on this button and 
+        animation will start -->
+    <button id="start">Start </button>
+    <!-- click on this button and 
+            animation will stop -->
+    <button id="stop">Stop </button>
+    <div></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <!-- jQuery code to show the working of this method -->
+    <script>
+        $(document).ready(function () {
+            var div = $("div");
+            $("#start").click(function () {
+                div.animate({
+                    height: 280
+                }, "slow");
+                div.animate({
+                    width: 280
+                }, "slow");
+                div.animate({
+                    height: 120
+                }, "slow");
+                div.animate({
+                    width: 120
+                }, "slow");
+            });
+            $("#stop").click(function () {
+                div.stop(true, true);
+            });
+        });
+    </script>
+</body>
+
+</html>

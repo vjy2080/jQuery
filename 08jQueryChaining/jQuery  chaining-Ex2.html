@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The stop Method</title>
+
+</head>
+
+<body>
+
+    <p id="para">Chaining method in jQuery</p>
+
+    <button>Click me</button>
+
+    <script src="
+    https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button").click(function () {
+
+                //assigning the color blue
+                $("#para").css("color", "blue")
+                    //using slide up method
+                    .slideUp(2000)
+                    //using slide down method
+                    .slideDown(2000).slideUp(2000).slideDown(4000);
+            });
+        });
+    </script>
+</body>
+
+</html>

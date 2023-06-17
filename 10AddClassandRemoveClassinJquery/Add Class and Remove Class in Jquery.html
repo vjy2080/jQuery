@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or Remove function</title>
+
+    <style>
+        h1 {
+            color: #006600;
+        }
+
+        button {
+            color: white;
+            background-color: #006600;
+            width: auto;
+            height: 30px;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        div {
+            height: 150px;
+            width: 150px;
+            position: relative;
+            text-align: center;
+            display: flex;
+            top: 20px;
+            border: 1px solid;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bg-black {
+            background-color: #006600b6;
+        }
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p>The addClass() or removeClass() methods are used to add the CSS classes when there is a need to add to our
+        webpage when there is some event listener or to create some kind of effect. In this article, let us see how can
+        we add a CSS class or remove a CSS class in jQuery.</p> <br>
+
+    <p>$('selector').addClass(class_name);</p>
+    <br>
+    <p>$('selector').removeClass(class_name);</p>
+
+    <h1>Add And Remove</h1>
+
+    <button id="btnadd"> ADD CLASS </button>
+    <button id="btnremove"> REMOVE CLASS </button>
+
+
+    <div id="box">
+        JayAmin
+    </div>
+
+    <!-- Including jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#btnadd').click(function () {
+                $('#box').addClass('bg-black');
+            });
+            $('#btnremove').click(function () {
+                $('#box').removeClass('bg-black');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>jQuery</h2>
+    <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <input type="text" autocomplete="off" name="username" id="username">
+    <button onclick="clickHandle()">Click</button>
+    <script>
+        function clickHandle() {
+            // console.log("called");
+            // let uname = document.getElementById("username").value
+            // let uname = $("#username")
+            let uname = $("#username").val()
+            console.log(uname);
+        }
+    </script>
+</body>
+</html>

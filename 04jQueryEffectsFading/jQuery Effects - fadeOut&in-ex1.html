@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title> jQuery | fadeOut() Method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+
+<body style="text-align:center;">
+
+    <!-- <h1 style="color:green;">
+        Jayamin
+    </h1> -->
+    <h2>jQuery | fadeOut() Method</h2>
+    <button class="btn1">Fade out</button>
+    <button class="btn2">Fade in</button>
+
+    <!-- Script to display fadeIn and fadeOut effect -->
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("h2").fadeOut()
+            });
+
+            $(".btn2").click(function () {
+                $("h2").fadeIn();
+            });
+        });
+    </script>
+</body>
+
+</html>
