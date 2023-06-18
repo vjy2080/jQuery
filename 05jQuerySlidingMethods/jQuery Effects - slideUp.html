@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slide Up</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <style>
@@ -13,8 +13,14 @@
         #flip {
             padding: 5px;
             text-align: center;
-            background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
+            background-color: #b0da3c;
+            border: solid 1px #e13a3a;
+        }
+
+        * {
+            text-align: center;
+            list-style: none;
+            font-size: xx-large;
         }
 
         #panel {
@@ -32,12 +38,12 @@
 
     </ul>
 
-    <p>The jQuery slideUp() method is used to slide up an element.</p>
-
-    <div id="flip">Click to slide up panel</div>
+    <p>The jQuery slideUp() method is used to slide Up an element.</p>
+    <div id="flip">Click to slide Up panel</div>
     <div id="panel">Hello world!</div>
 
     <script>
+
         $(document).ready(function () {
             $("#flip").click(function () {
                 $("#panel").slideUp("slow");

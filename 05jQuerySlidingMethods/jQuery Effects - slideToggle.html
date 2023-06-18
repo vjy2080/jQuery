@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slide Toggle</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
     <style>
@@ -13,8 +13,14 @@
         #flip {
             padding: 5px;
             text-align: center;
-            background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
+            background-color: #b0da3c;
+            border: solid 1px #e13a3a;
+        }
+
+        * {
+            text-align: center;
+            list-style: none;
+            font-size: xx-large;
         }
 
         #panel {
@@ -33,9 +39,8 @@
 
     </ul>
 
-    <p>The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.</p>
-
-    <div id="flip">Click to slide the panel down or up</div>
+    <p>The jQuery slideUpDown() method is used to slide Up & down an element by slideToggle.</p>
+    <div id="flip">Click to slide Up & down panel</div>
     <div id="panel">Hello world!</div>
     <script>
         $(document).ready(function () {
