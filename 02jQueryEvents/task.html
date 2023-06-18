@@ -16,29 +16,40 @@
 </head>
 
 <body>
-	<p id="e1">Welcome.</p>
-	<p id="e2">Learn and Explore</p>
+
+	<p id="e1">This text will change after click on <b>"Change Text" button</b></p>
+	<button id="gfg1">Change Text</button>
+
+	<hr>
+	<p id="e2">After clicking on "Chaange HTML" button it will be convert into a heading</p>
+	<button id="gfg2">Change HTML</button>
+	<hr>
 	<p>
-		<input type="text" id="e3" value="jQuery is powerful!" />
+		<input type="text" id="e3" value="This value will be change" />
 	</p>
-	<p id="e4" align="left">Welcome to Text</p>
+	<button id="gfg3">Change Value</button>
+	<hr>
+	<p id="e4" align="left">Text is align "LEFT", It will aligned "CENTER" after clicking on "Change Alignment".</p>
 	<p>
+		<button id="gfg4">Change Alignment</button>
+
+<hr>
+		<p> Below box will convert into a round shape after clicking on "Change shape" button.</p>
 		<div id="e5"></div>
 	</p>
-	<button id="gfg1">Change Text</button>
-	<button id="gfg2">Change HTML</button>
-	<button id="gfg3">Change Value</button>
-	<button id="gfg4">Change Alignment</button>
 	<button id="gfg5">Change Shape</button>
+	<hr>
+
+	
 	<script type="text/javascript">
 		$("#gfg1").click(function() {
-			$("#e1").text("Testing Text");
+			$("#e1").text("This text is changed.");
 		});
 		$("#gfg2").click(function() {
-			$("#e2").html("<b>Enrich your Knowledge.</b>");
+			$("#e2").html("<h1>This is Heading 2 changed from paragraph</h1>");
 		});
 		$("#gfg3").click(function() {
-			$("#e3").val("jQuery With Jay Amin");
+			$("#e3").val("changed Value");
 		});
 		$("#gfg4").click(function() {
 			$("#e4").attr("align", "center");

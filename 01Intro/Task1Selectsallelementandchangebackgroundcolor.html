@@ -10,7 +10,7 @@
 		<h1>Welcome to MySite</h1>
 		<p>My name is Jay Amin</p>
 		<p>I live in Ahmedabad.</p>
-		<p>My best friend is Jigar.</p>
+		<p id="bold">My best friend is Jigar.</p>
 		<p>Who is your favourite:</p>
 		<ul type="square">
 			<li>Test</li>
@@ -21,7 +21,9 @@
 	<script>
 		$(document).ready(function () {
 			$("*").css("background-color",
-				"lightgreen");
+				"skyblue");
+				$(".bold").css("background-color",
+				"green");
 		});
 	</script>
 
