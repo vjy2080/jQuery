@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            font-weight: bolder;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>In jQuery, traversing means moving through or over the HTML elements to find, filter or select a particular or
+        entire element.</p>
+    <p>parent() it gives parent element of specified selector.<br> <span>$(selector).parent();
+        </span></p>
+    <p>parents() it gives all ancestor elements of the specified selector.<br><span> $(selector).parents();</span></p>
+    <p>parentsUntil()it gives all ancestor elements between specified selector and arguments.
+        <br> <span>$(selector).parentsUntil(selector, filter element)<br>$(selector).parentsUntil(element, filter
+            element)</span>
+    </p>
+    <p>offsetParent() it gives the first positioned parent element of specified selector.<br> <span>
+            $(selector).offsetParent();</span></p>
+    <p>closest() it gives the first ancestor of the specified selector.<br><span>$(selector).closest(selector);<br>
+            $(selector).closest(selector, context);<br>
+            $(selector).closest(selection);<br>
+            $(selector).closest(element);</span>
+    <p>children()it gives the children of each selected elements, optionally filtered by a selector.<br><span>
+            $(selector).children();</span></p>
+    <p> find() it gives descendant elements of specified elements, filtered by a selector, jQuery object, or element.
+        <br><span>
+            $(selector).find('selector to find');
+        </span>
+    </p>
+    <p>siblings()
+        it gives all siblings of the specified selector.<br><span>
+            $(selector).siblings();</span></p>
+    <p>next()it gives the next sibling element of the specified selector.<br><span>
+            $(selector).next();
+        </span></p>
+    <p>nextAll() it gives all next sibling elements of the specified selector.<br><span>$(selector).nextAll();</span>
+    </p>
+    <p> nextUntil()it gives all next sibling elements between specified selector and
+        arguments.<br><span>$(selector).nextUntil();</span></p>
+
+    <p>prev() it gives the previous sibling element of the specified selector.<br><span>p$(selector).prev(selector);<br>
+            $(selector).prev()</span></p>
+    <p> prevAll()it gives all previous sibling elements of the specified selector.<br><span>
+            $(selector).prevAll(selector, filter element)<br> $(selector).prevAll(element, filter element)</span>
+    </p>
+    <p> prevUntil()it gives all previous sibling elements between specified selector and arguments.<br><span>
+            $(selector).prevUntil(selector, filter element)<br>
+            $(selector).prevUntil(element, filter element)
+        </span></p>
+    <p> Filtering first()it gives the first element of the specified selector.<br><span>$(selector).first();</span></p>
+    <p> Filtering last()it gives the last element of the specified selector.<br><span>$(selector).last();</span></p>
+    <p> Filtering eq()it gives an element with a specific index number of the specified selector.
+        <br><span>$(selector).eq(index);<br>$(selector).eq( indexFromEnd );</span>
+    </p>
+    <p> Filtering filter() it remove/detect an elements that are matched with specified selector.
+        <br><span>$(selector).filter(selector)<br>$(selector).filter(function)<br>$(selector).filter(selection)<br>$(selector).filter(elements)</span>
+    </p>
+    <p> Filtering has()it gives all elements that have one or more elements within, that are matched with specified
+        selector.
+        <br><span>$(selector).has(selector);</span>
+    </p>
+    <p> Filtering is() it checks if one of the specified selector is matched with arguments.
+        <br><span>.is( selector )<br>.is( function )<br>.is( selection )<br>.is( elements )</span>
+    </p>
+    <p>map()Pass each element in the current matched set through a function, producing a new jQuery object containing
+        the
+        return values<br><span> .map( callback )</span></p>
+
+    <p>slice()it selects a subset of specified selector based on its argument index or by start and stop value.
+        <br><span> $(selector).slice(start, end );<br> $(selector).slice(start);</span>
+    </p>
+    <p>slice()it selects a subset of specified selector based on its argument index or by start and stop
+        value.<br><span>$(selector).slice(start, end );<br>$(selector).slice(start);</span></p>
+    <p>Miscellaneous Traversing add()it add all elements to set of matched elements to manipulate them at the same time.
+        <br><span>$(selector).add(selector to add);</span>
+    </p>
+    <p>addBack() it add the previous set of elements on the stack to the current set, optionally filtered by a selector.
+        <br><span> $(selector).addBack();</span>
+    </p>
+    <p>andSelf() Deprecated 1.8 which is alias of addBack().<br><span>$(selector).addSelf();</span>
+    </p>
+    <p> contents()it gives all direct children, including text and comment nodes, of the specified selector.
+        <br><span>$(selector).contents();</span>
+    </p>
+    <p>not()it gives all elements that do not match with specified selector.
+        <br><span>$(selector).not(selector);</span>
+    </p>
+    <p> end()it is most recent filtering operation in the current chain and return the set of matched elements to its
+        previous state and it doesn’t accept any arguments.<br><span>
+            $(selector).each(callback function);</span></p>
+
+
+
+</body>
+
+</html>

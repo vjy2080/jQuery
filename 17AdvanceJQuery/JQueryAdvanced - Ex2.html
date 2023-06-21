@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .siblings {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body class="siblings">
+
+    <div>Example (parent)
+        <p>Example</p>
+        <p><span>Example</span></p>
+        <h2>Example</h2>
+        <h3>Example</h3>
+        <p>Example</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h2").siblings().css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+            $("h2").parent().css({
+                "color": "green",
+                "border": "2px solid blue"
+            });
+            $("p").first().css(
+                "background-color", "yellow");
+            $("p").has("span").css(
+                "background-color", "indigo");
+
+        });
+    </script>
+
+</body>
+
+</html>

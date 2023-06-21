@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: grey;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        form {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #article b {
+            color: blue;
+            font-weight: bold;
+        }
+
+        label {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p><em>Hello</em>Example</p>
+    <p id="article"><b>Article Info: </b></p>
+    <form>
+        <label>Article Title:</label>
+        <input type="text" name="article" value="jQuery | Traversing Example 2" />
+        <br>
+        <br>
+        <label>Author:</label>
+        <input type="text" name="author" value="jay" />
+        <br>
+        <br>
+        <label>Author's Email id:</label>
+        <input type="text" name="author" value="jay@gmail.com" />
+        <br>
+        <br>
+        <label>Website:</label>
+        <input type="text" name="url" value="https://www.Example.org/" />
+        <br>
+        <br>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js">
+    </script>
+
+    <script>
+        $("#article")
+            .append($("input").map(function () {
+                return $(this).val();
+            }).get().join(", "));
+    </script>
+    <script>
+        $("p")
+            .css("border", "2px red solid");
+    </script>
+
+
+</body>
+
+</html>
