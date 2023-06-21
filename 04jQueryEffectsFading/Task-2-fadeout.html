@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>fadeOut demo</title>
+  <style>
+  .box,
+  button {
+    float: left;
+    margin: 5px 10px 5px 0;
+  }
+  .box {
+    height: 80px;
+    width: 80px;
+    background: #090;
+  }
+  #log {
+    clear: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+ 
+<button id="btn1">fade out</button>
+<button id="btn2">show</button>
+ 
+<div id="log"></div>
+ 
+<div id="box1" class="box">linear</div>
+<div id="box2" class="box">swing</div>
+ 
+<script>
+$( "#btn1" ).on( "click", function() {
+  function complete() {
+    $( "<div>" ).text( this.id ).appendTo( "#log" );
+  }
+  $( "#box1" ).fadeOut( 500, "linear", complete );
+  $( "#box2" ).fadeOut( 1600, complete );
+});
+ 
+$( "#btn2" ).on( "click", function() {
+  $( "div" ).show();
+  $( "#log" ).empty();
+});
+</script>
+ 
+</body>
+</html>

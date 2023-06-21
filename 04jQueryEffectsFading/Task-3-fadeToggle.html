@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>fadeToggle demo</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+ 
+<button>fadeToggle p1</button>
+<button>fadeToggle p2</button>
+<p>This paragraph has a slow, linear fade.</p>
+<p>This paragraph has a fast animation.</p>
+ 
+<script>
+$( "button" ).first().on( "click", function() {
+  $( "p" ).first().fadeToggle( "slow", "linear" );
+} );
+$( "button" ).last().on( "click", function() {
+  $( "p" ).last().fadeToggle( "fast")})
+
+</script>
+ 
+</body>
+</html>
