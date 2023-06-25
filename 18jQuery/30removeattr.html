@@ -6,16 +6,16 @@
 </head>
 <body>
  
-<button>Change title</button>
-<input type="text" title="hello there">
+<button>Remove placeholder</button>
+<input type="text" title="hello there" placeholder="hello world">
 <div id="log"></div>
  
 <script>
 (function() {
-  var inputTitle = $( "input" ).attr( "title" );
+  var inputTitle = $( "input" ).attr( "placeholder" );
   $( "button" ).click(function() {
     var input = $( this ).next();
-    input.removeAttr( "title" )
+    input.removeAttr( "placeholder")
  
   });
 })();
