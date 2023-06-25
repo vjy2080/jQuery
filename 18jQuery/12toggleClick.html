@@ -41,7 +41,7 @@ $( "p" ).each(function() {
     count+=5;
     console.log(count);
     $thisParagraph.find( "span" ).text( "clicks: " + count );
-    $thisParagraph.toggleClass( "highlight", count % 3 === 0 );
+    $thisParagraph.toggleClass( "highlight", count % 2 === 0 );
   });
 });
 </script>
